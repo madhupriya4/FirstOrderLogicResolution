@@ -23,7 +23,8 @@ predicate	name	will	not	appear	with	different	number	of	arguments.
 • There	will	be	at	most	100	queries	and	1000	sentences	in	the	knowledge	base.		
 • See	the	sample	input	below	for	spacing	patterns.		
 • You	can	assume	that	the	input	format	is	exactly	as	it	is	described.	There	will	be	no	syntax	errors	in	the	
-given	input.		
+given	input.	
+
 Format	for	output.txt:	
 	
 For	each	query,	determine	if	that	query	can	be	inferred	from	the	knowledge	base	or	not,	one	query	per	line:	
@@ -38,18 +39,9 @@ each	answer	should	be	either	TRUE	if	you	can	prove	that	the	corresponding	query	
 knowledge	base,	or	FALSE	if	you	cannot.	
 	
 Notes	and	hints:	
-	
-- Please	 name	 your	 program	 “homework.xxx”	 where	 ‘xxx’	 is	 the	 extension	 for	 the	 programming	
-language	you	choose.	(“py”	for	python,	“cpp”	for	C++,	and	“java”	for	Java).	If	you	are	using	C++11,	then	
-the	name	of	your	file	should	be	“homework11.cpp”	and	if	you	are	using	python3.4	then	the	name	of	
-your	file	should	be	“homework3.py”.	
--
-If	you	decide	that	the	given	statement	can	be	inferred	from	the	knowledge	base,	every	variable	in	each	
-sentence	used	in	the	proving	process	should	be	unified	with	a	Constant	(i.e.,	unify	variables	to	
-constants	before	you	trigger	a	step	of	resolution).	-
-All	variables	are	assumed	to	be	universally	quantified.	There	is	no	existential	quantifier	in	this	
-homework.	There	is	no	need	for	Skolem	functions	or	Skolem	constants.	
--
+
+All variables	are	assumed	to	be	universally	quantified.	There	is	no	existential	quantifier	in	this	homework.	There	is	no	need	for	Skolem	functions	or	Skolem	constants.	
+
 Operator	priorities	apply	(negation	has	higher	priority	than	disjunction).	There	will	be	no	parentheses	
 in	the	sentences,	other	than	around	arguments	of	predicates.	
 -
